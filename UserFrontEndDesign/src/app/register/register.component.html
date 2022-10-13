@@ -1,0 +1,41 @@
+
+<div class="register-page">
+    <h1 style="font-size: 40px; color: aqua; padding: 50px;" >Registeration for Student Enrollment</h1>
+    <form [formGroup]="registerForm" (ngSubmit)="onSubmit()">
+      <div class="leftpad">
+        <mat-form-field appearance="outline">
+          <mat-label>Fill form field</mat-label>
+          <input matInput  formControlName="studentid"  required placeholder="give id">
+        </mat-form-field>
+      </div>
+      <div class="leftpad">
+        <mat-form-field appearance="outline">
+          <mat-label>Fill form field</mat-label>
+          <input matInput formControlName="studentname"  required placeholder="Your name as per record">
+        </mat-form-field>
+      </div>
+      <div class="leftpad">
+        <mat-form-field appearance="outline">
+          <mat-label>Fill form field</mat-label>
+          <input matInput  formControlName="studentemail" required placeholder="Your valid Email address">
+        </mat-form-field>
+      </div>
+      <div class="leftpad">
+        <mat-form-field appearance="outline">
+          <mat-label>Fill form field</mat-label>
+          <input matInput formControlName="password" required placeholder="Unique password">
+        </mat-form-field>
+      </div>
+      <div class="leftpad">
+        <mat-form-field appearance="outline">
+          <mat-label>Fill form field</mat-label>
+          <input matInput type="password" formControlName="confirmpassword" required placeholder="password">
+        </mat-form-field>
+      </div><br>
+
+      <div class="leftpad">
+        <button type="submit" mat-stroked-button color="primary" style="border: 2px solid black;" >Register</button>
+        <button mat-stroked-button color="primary" style="margin-left: 50px;border: 2px solid black;" routerLink="/login">Login</button>
+      </div>
+    </form>
+  </div>

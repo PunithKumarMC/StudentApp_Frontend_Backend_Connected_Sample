@@ -1,0 +1,12 @@
+{
+  "studentData": [
+    {
+      "studentid": "1235",
+      "studentname": "sdf",
+      "studentemail": "sdf@gmail.com",
+      "password": "sad",
+      "confirmpassword": "sad",
+      "id": 1
+    }
+  ]
+}

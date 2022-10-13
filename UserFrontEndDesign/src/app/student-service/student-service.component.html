@@ -1,0 +1,25 @@
+<div>
+<p style="color: red;font-size: xx-large;margin: 50px;">Click on below button to get all registerd students details</p>
+<button mat-stroked-button style="border: 2px solid black;margin:10px" (click)="fetchallstudednt()">Get all students
+    data</button>
+<div style="margin-left: 50px;">
+    <table class="table">
+        <thead>
+        <tr>
+            <th>Student ID</th>
+            <th>Student Name</th>
+            <th>Student Email</th>
+            <th>Student Password</th>
+        </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let note of studdata">
+                <td>{{note.studentid}}</td>
+                <td>{{note.studentname}}</td>
+                <td>{{note.studentemail}}</td>
+                <td>{{note.password}}</td>
+            </tr>
+        </tbody>
+    </table>
+    </div>
+</div>

@@ -1,0 +1,23 @@
+<div class="login-page">
+  <h1 style="font-size: 40px; color: aqua; padding: 50px;">Login for your account</h1>
+  <form [formGroup]="loginForm" (ngSubmit)="verifyingdata()">
+    <div class="leftpad">
+      <mat-form-field appearance="outline">
+        <mat-label>Fill form field</mat-label>
+        <input matInput placeholder="Enter name for Login" type="name" formControlName="studentname" required>
+      </mat-form-field>
+    </div>
+    <div class="leftpad">
+      <mat-form-field appearance="outline">
+        <mat-label>Fill form field</mat-label>
+        <input matInput placeholder="Password" type="password" formControlName="password" required>
+      </mat-form-field>
+    </div>
+    <div class="leftpad">
+      <button mat-stroked-button color="primary" style="border: 2px solid black;"
+        routerLink="/register">Register</button>
+      <button type="submit" mat-stroked-button color="primary" style="margin-left: 50px;border: 2px solid black;"
+        routerLink="/login">Login</button>
+    </div>
+  </form>
+</div>
